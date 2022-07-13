@@ -2,10 +2,7 @@ package com.microservices.clientui.web;
 
 import com.microservices.clientui.beans.ProductBean;
 import com.microservices.clientui.proxy.MicroserviceProduitsProxy;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +21,11 @@ public class ClientController {
         List<ProductBean> produits =  produitsProxy.listeDesProduits();
 
         return produits;
+    }
+    @GetMapping ("produits/{id}")
+    public ProductBean produitId(@PathVariable int id){
+        ProductBean productBean =  produitsProxy.recupererUnProduit(id);
+
+        return productBean;
     }
 }
