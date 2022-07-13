@@ -28,4 +28,10 @@ public class ClientController {
 
         return productBean;
     }
+    @GetMapping ("/produits-p-{p}")
+    public List<ProductBean> listproduitParPage(@PathVariable int p){
+
+
+        return produitsProxy.recupererListProduitsParPage(p);
+    }
 }
