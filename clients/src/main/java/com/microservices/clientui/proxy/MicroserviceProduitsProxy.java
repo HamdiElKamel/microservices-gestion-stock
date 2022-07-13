@@ -14,5 +14,7 @@ public interface MicroserviceProduitsProxy {
 
     @GetMapping( value = "/Produits/{id}")
     ProductBean recupererUnProduit(@PathVariable("id") int id);
+    @GetMapping( value = "/Produits-p-{p}")
+    List<ProductBean> recupererListProduitsParPage(@PathVariable("p") int p);
 
 }
