@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/workspace/erp/serveur_gestion_stock/ServeurGestionDeStock.iml" filepath="D:/workspace/erp/serveur_gestion_stock/ServeurGestionDeStock.iml" />
       <module fileurl="file://$PROJECT_DIR$/../clients/clientui.iml" filepath="$PROJECT_DIR$/../clients/clientui.iml" />
       <module fileurl="file://$PROJECT_DIR$/../config-server/config-server.iml" filepath="$PROJECT_DIR$/../config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/config-server-repo.iml" filepath="$PROJECT_DIR$/.idea/config-server-repo.iml" />

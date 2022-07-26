@@ -1,1 +1,0 @@
-"# microservices-gestion-stock-config" 
